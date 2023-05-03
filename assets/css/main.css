@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
 
 html {
   overflow-x: hidden;
@@ -49,6 +50,8 @@ h5 {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
 }
+
+
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -294,7 +297,7 @@ ol li {
   font-size: 18px;
 }
 
-.about-text p {
+.about-info {
   font-size: 20px;
   letter-spacing: 0.5px;
 }
@@ -578,6 +581,7 @@ a.back-to-top:focus {
 }
 
 .section-padding {
+  /* height: 100vh; */
   padding: 60px 0;
 }
 
@@ -911,8 +915,7 @@ a.back-to-top:focus {
     padding: 0px 40px;
     color: #212121;
   }
-
-  .about-text p {
+  .about-info {
     font-size: 16px;
   }
 }
@@ -965,7 +968,6 @@ a.back-to-top:focus {
   }
 
   .about-content .about-text h2 {
-    font-size: 38px !important;
     margin-top: 20px;
     text-align: center;
   }
@@ -980,8 +982,21 @@ a.back-to-top:focus {
 }
 
 #about {
-  background: #f6f9f9;
+  height: 100vh;
 }
+
+#about-college{
+  height: 80vh;
+}
+
+.college{
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1641038624074-25a1e8fabfc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size : cover ;
+  background-position:center;
+}
+
+
 
 .about-content {
   height: 100%;
@@ -994,7 +1009,6 @@ a.back-to-top:focus {
 }
 
 .about-content .about-text h2 {
-  font-size: 40px;
   font-weight: 700;
 }
 
@@ -1005,10 +1019,23 @@ a.back-to-top:focus {
   margin-top: 20px;
 }
 
-.about-content .about-text p {
+.about-header , .college-header {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.about-info , .college-info{
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.about-content .about-info {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 17px;
 }
 
 .about-content ul {
@@ -2556,12 +2583,14 @@ footer {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  /* background: url(../img/hero-area.jpg) no-repeat; */
-  /* background: url(../img/background/bgop.png) no-repeat; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  /* background-image:url("../img/background/home-page-bg1.jpeg") ; */
   background-size: cover;
   background-position: center center;
   height: 110vh;
 }
+
+
 
 #hero-area {
   color: #fff;
@@ -2602,16 +2631,17 @@ footer {
 }
 
 #hero-area .contents .banner-info {
-  font-size: 4vw;
-  font-style: italic;
-  margin-bottom: 22px;
-  line-height: 24px;
+  font-size: 36px;
+  font-family: 'Signika Negative', sans-serif;
   color: #fff;
-  margin-top: 40px;
+}
+
+.hackathon-name{
+  color: #64abf8;
 }
 
 #hero-area .contents .banner-btn {
-  margin-top: 35vh;
+  margin-top: 12vh;
 }
 
 #hero-area .contents .head-title {
@@ -2727,8 +2757,7 @@ div#clock {
   #hero-area .contents .banner-btn {
     margin-top: 0px;
   }
-
-  #nav-logo {
+  #nav-logo{
     margin-left: 0px;
   }
 }
@@ -2767,7 +2796,6 @@ div#clock {
   #nav-container {
     background: #1c1c1c;
   }
-
   /* @media (min-width:200px) and (max-width:1400px) {
     #nav-container{
       margin:60px;
@@ -2818,7 +2846,9 @@ section#count {
 
 /* Dark Theme */
 section#about {
-  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1620121478247-ec786b9be2fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
@@ -2826,8 +2856,13 @@ section#information-bar {
   background: #000;
 }
 
-section#domains,
-section#prizes {
+section#domains {
+  background:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1552083940-86877723de7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+section#prizes{
   background: #000;
 }
 
@@ -2957,3 +2992,4 @@ li.stylish-list {
 .prize-desc {
   display: none;
 }
+
