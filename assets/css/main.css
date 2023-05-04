@@ -2804,7 +2804,7 @@ div#clock {
 
   #nav-container {
     background: #1c1c1c;
-    height: 100px;
+    /* height: 100px; */
   }
   /* @media (min-width:200px) and (max-width:1400px) {
     #nav-container{
