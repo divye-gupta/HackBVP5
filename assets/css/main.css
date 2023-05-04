@@ -2154,6 +2154,7 @@ h1 {
 /* Inforamation Bar */
 #contact-text {
   background: #161e26;
+  /* background: #0099ff; */
 }
 
 #contact-text .contact-wrapper {
@@ -2201,8 +2202,11 @@ h1 {
 /* Footer Area Start */
 footer {
   background: #161e26;
+  /* background: linear-gradient(0deg, #c1a0a0 0, #152fa2 100%); */
   text-align: center;
 }
+
+
 
 .site-info {
   position: relative;
@@ -2356,6 +2360,9 @@ footer {
 .footer-logo {
   margin-bottom: 50px;
 }
+
+
+
 
 /* ==========================================================================
    Countdown Style Start
@@ -2638,6 +2645,8 @@ footer {
 
 .hackathon-name{
   color: #64abf8;
+  font-size: xxx-large;
+  font-weight: 400;
 }
 
 #hero-area .contents .banner-btn {
@@ -2795,6 +2804,7 @@ div#clock {
 
   #nav-container {
     background: #1c1c1c;
+    height: 100px;
   }
   /* @media (min-width:200px) and (max-width:1400px) {
     #nav-container{
@@ -2945,7 +2955,9 @@ h3 {
 
 section#contact-text,
 footer {
-  background: #000;
+  /* background: #000; */
+  /* background: linear-gradient(0deg, #000 0, #000c44 100%); */
+  background:  linear-gradient( rgb(0, 0, 0), rgb(0, 12, 68));
 }
 
 #contact-text .contact-wrapper {
