@@ -23,7 +23,7 @@ body::-webkit-scrollbar-thumb {
   /* roundness of the scroll thumb */
 }
 
-#preloader{
+#preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -402,6 +402,7 @@ a.back-to-top:hover,
 a.back-to-top:focus {
   text-decoration: none;
 }
+
 /* 
 #preloader {
   position: fixed;
@@ -927,6 +928,7 @@ a.back-to-top:focus {
     padding: 0px 40px;
     color: #212121;
   }
+
   .about-info {
     font-size: 16px;
   }
@@ -997,15 +999,15 @@ a.back-to-top:focus {
   height: 100vh;
 }
 
-#about-college{
+#about-college {
   height: 80vh;
 }
 
-.college{
+.college {
   padding: 100px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1641038624074-25a1e8fabfc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  background-size : cover ;
-  background-position:center;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -1031,7 +1033,8 @@ a.back-to-top:focus {
   margin-top: 20px;
 }
 
-.about-header , .college-header {
+.about-header,
+.college-header {
   color: #fff;
   font-size: 36px;
   text-transform: uppercase;
@@ -1039,7 +1042,8 @@ a.back-to-top:focus {
   font-family: 'Signika Negative', sans-serif;
 }
 
-.about-info , .college-info{
+.about-info,
+.college-info {
   font-size: 16px;
   font-weight: 200;
   font-family: 'Signika Negative', sans-serif;
@@ -1955,7 +1959,7 @@ h1 {
 }
 
 .blog-item .descr {
-  padding: 50px 25px 20px;
+  padding: 25px 25px 20px;
   color: #212121;
   position: relative;
 }
@@ -2602,7 +2606,7 @@ footer {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)) ,url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
   /* background-image:url("../img/background/home-page-bg1.jpeg") ; */
   background-size: cover;
   background-position: center center;
@@ -2655,7 +2659,7 @@ footer {
   color: #fff;
 }
 
-.hackathon-name{
+.hackathon-name {
   color: #64abf8;
   font-size: xxx-large;
   font-weight: 400;
@@ -2778,7 +2782,8 @@ div#clock {
   #hero-area .contents .banner-btn {
     margin-top: 0px;
   }
-  #nav-logo{
+
+  #nav-logo {
     margin-left: 0px;
   }
 }
@@ -2818,6 +2823,7 @@ div#clock {
     background: #1c1c1c;
     /* height: 100px; */
   }
+
   /* @media (min-width:200px) and (max-width:1400px) {
     #nav-container{
       margin:60px;
@@ -2879,12 +2885,13 @@ section#information-bar {
 }
 
 section#domains {
-  background:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1552083940-86877723de7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  /* background:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("https://images.unsplash.com/photo-1552083940-86877723de7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("  https://images.unsplash.com/photo-1641038624074-25a1e8fabfc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-size: cover;
   background-position: center;
 }
 
-section#prizes{
+section#prizes {
   background: #000;
 }
 
@@ -2969,7 +2976,7 @@ section#contact-text,
 footer {
   /* background: #000; */
   /* background: linear-gradient(0deg, #000 0, #000c44 100%); */
-  background:  linear-gradient( rgb(0, 0, 0), rgb(0, 12, 68));
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 12, 68));
 }
 
 #contact-text .contact-wrapper {
@@ -3016,4 +3023,3 @@ li.stylish-list {
 .prize-desc {
   display: none;
 }
-
