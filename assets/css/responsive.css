@@ -148,6 +148,7 @@
 
 /* mobile or only mobile */
 @media (max-width: 767px) {
+
   .section-title {
     font-size: 22px;
   }
