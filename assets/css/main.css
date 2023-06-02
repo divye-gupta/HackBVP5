@@ -995,13 +995,13 @@ a.back-to-top:focus {
   }
 }
 
-#about {
+/* #about {
   height: 70vh;
-}
+} */
 
-#about-college {
+/* #about-college {
   height: 80vh;
-}
+} */
 
 .college {
   padding: 100px 0;
@@ -2630,7 +2630,6 @@ footer {
   /* background-image:url("../img/background/home-page-bg1.jpeg") ; */
   background-size: cover;
   background-position: center center;
-  height: 110vh;
 }
 
 .logo-image{
@@ -3071,21 +3070,3 @@ li.stylish-list {
   align-items: center;
 }
 
-@media screen and (min-width:426px) {
-  .hackathon-name{
-    font-size: 38px;
-  }
-  #about-college{
-    height: 130vh;
-  }
-  #about{
-    height: 150vh;
-  }
-  .left-section-logo{
-    width: 100%;
-  }
-  .logo-image{
-    width: 90%;
-    height: 250px;
-  }
-}
