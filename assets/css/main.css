@@ -3071,7 +3071,7 @@ li.stylish-list {
   align-items: center;
 }
 
-@media screen and (max-width:426px) {
+@media screen and (min-width:426px) {
   .hackathon-name{
     font-size: 38px;
   }
