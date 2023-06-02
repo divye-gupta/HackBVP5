@@ -1139,11 +1139,14 @@ a.back-to-top:focus {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  padding: 10px;
+  border: 40px solid #335281a6;
 }
+
 
 .ready-to-play:before {
   content: '';
-  background-image: linear-gradient(0deg, #2a1c7a 0, #3fa3c2 100%);
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
   position: absolute;
   display: block;
   left: 0px;
@@ -1154,7 +1157,22 @@ a.back-to-top:focus {
   opacity: 0.2;
 }
 
-video {
+.video-container {
+ width:100vw;
+ height: 100vh;
+  border: 40px solid #335281a6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.hack-video{
+  width: 90vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video-desktop {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1172,9 +1190,9 @@ video {
 
 .stop {
   opacity: 1;
-}
+} 
 
-.stopfade .ready-to-play:before {
+ .stopfade .ready-to-play:before {
   opacity: 1;
 }
 
@@ -1304,6 +1322,8 @@ h1 {
   line-height: 60px;
   color: #fff;
 }
+
+
 
 .counter-section .counter p {
   font-size: 15px;
@@ -2228,10 +2248,9 @@ footer {
   position: relative;
   padding: 30px 0;
   margin-bottom: 30px;
-  text-decoration: none;
 }
 
-.site-info a {
+.site-info p {
   font-size: 13px;
   color: #9e9e9e;
 }
@@ -2614,12 +2633,17 @@ footer {
   height: 110vh;
 }
 
-
+.logo-image{
+  width: 350px;
+  height: 350px;
+}
 
 #hero-area {
   color: #fff;
   overflow: hidden;
   position: relative;
+  width: 100vw;
+  height: 110vh;
 }
 
 #hero-area .overlay {
@@ -2662,7 +2686,7 @@ footer {
 
 .hackathon-name {
   color: #64abf8;
-  font-size: xxx-large;
+  font-size: 44px;
   font-weight: 400;
 }
 
@@ -2794,6 +2818,14 @@ div#clock {
     /* width: 10vw; */
     height: 12vh;
     padding: 10vw;
+  }
+
+  .ready-to-play{
+    display: none;
+  }
+
+  .video-container{
+    display: flex;
   }
 
   #count .count-wrapper {
@@ -3023,4 +3055,43 @@ li.stylish-list {
 
 .prize-desc {
   display: none;
+}
+
+
+.section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section-logo{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+  #hero-area{
+   height: 150vh;
+  }
+  #about-college{
+    height: 130vh;
+  }
+  #about{
+    height: 130vh;
+  }
+  .left-section-logo{
+    width: 100%;
+  }
+  .logo-image{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .hackathon-name{
+    font-size: 38px;
+  }
 }
