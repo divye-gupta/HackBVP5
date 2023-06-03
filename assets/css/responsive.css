@@ -288,6 +288,11 @@
     min-width: 5rem;
     padding: 18px 20px;
   }
+
+  #preloader {
+    background: #3A3636 url("../img/loader2.gif") no-repeat center center;
+    background-size: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
