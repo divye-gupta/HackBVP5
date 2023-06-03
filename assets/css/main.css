@@ -3140,6 +3140,64 @@ li.stylish-list {
   color: #0099ff;
 }
 
+.powered-by-sponsors-container,.season-sponsors-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coding-ninjas-sponsor-image-container,.devfolio-sponsor-image-container,.filecoin-sponsor-image-container,.replit-sponsor-image-container,.polygon-sponsor-image-container,.solana-sponsor-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coding-ninjas-sponsor-image-container{
+  width: 350px;
+  height: 100px;
+}
+
+.devfolio-sponsor-image-container{
+  width: 350px;
+  height: 100px;
+}
+
+.coding-ninjas{
+  width: 300px;
+  height: 100px;
+}
+.devfolio{
+  width: 300px;
+  height: 70px;
+}
+
+.filecoin-sponsor-image-container{
+  width: 150px;
+  height: 100px;
+}
+
+.polygon-sponsor-image-container,.replit-sponsor-image-container,.solana-sponsor-image-container{
+  width: 250px;
+  height: 100px;
+}
+
+.filecoin{
+  width: 100px;
+  height: 100px;
+}
+
+.replit,.polygon{
+  width: 200px;
+  height: 70px;
+ 
+}
+
+.solana{
+  width: 200px;
+  height: 50px;
+  
+}
+
 @media screen and (max-width:425px) {
   .left-section-logo{
     width: 100%;
@@ -3194,3 +3252,82 @@ li.stylish-list {
     }
     
     }
+
+    @media screen and (max-width:915px) {
+  
+      .filecoin-sponsor-image-container{
+        width: 130px;
+        height: 100px;
+      }
+      
+      .polygon-sponsor-image-container,.replit-sponsor-image-container,.solana-sponsor-image-container{
+        width: 230px;
+        height: 100px;
+      }
+      
+      }
+
+@media screen and (max-width:815px) {
+  
+        .filecoin-sponsor-image-container{
+          width: 110px;
+        }
+        
+        .polygon-sponsor-image-container,.replit-sponsor-image-container,.solana-sponsor-image-container{
+          width: 210px;
+        }
+        
+        }
+
+        @media screen and (max-width:768px) {
+
+          .powered-by-sponsors-container,.season-sponsors-container{
+            flex-direction: column;
+          }
+
+          .coding-ninjas-sponsor-image-container{
+           width: 100%;
+            height: 100px;
+          }
+          
+          .devfolio-sponsor-image-container{
+            width: 100%;
+            height: 100px;
+          }
+          
+          .coding-ninjas{
+            width: 250px;
+            height: 100px;
+          }
+          .devfolio{
+            width: 250px;
+            height: 70px;
+          }
+
+          .filecoin-sponsor-image-container{
+            width: 100%;
+            height: 170px;
+          }
+          
+          .polygon-sponsor-image-container,.replit-sponsor-image-container,.solana-sponsor-image-container{
+            width: 100%;
+            height: 150px;
+          }
+          
+          .filecoin{
+            width: 130px;
+            height: 130px;
+          }
+          
+          .replit,.polygon{
+            width: 230px;
+            height: 90px;
+          
+          }
+          
+          .solana{
+            width: 250px;
+            height: 70px;
+          }
+          
+      }
