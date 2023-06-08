@@ -161,6 +161,33 @@
             text-decoration: none;
         }
 
+
+        .hierarchy {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 15px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .hierarchy a {
+            text-decoration: none;
+        }
+
+        .hierarchy_row {
+            display: flex;
+            grid-gap: 30px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hierarchy_row:nth-child(3) {
+            grid-gap: 270px;
+        }
+
         @media screen and (max-width: 1200px) {
             .section-team .single-person .person-image img {
                 width: 90%;
@@ -177,6 +204,14 @@
             .title2 {
 
                 font-size: 40px;
+            }
+
+            .hierarchy_row{
+                grid-gap: 0px;
+            }
+
+            .hierarchy_row:nth-child(3) {
+                grid-gap: 0px;
             }
         }
 
@@ -206,6 +241,10 @@
                 padding: 0 40px;
             }
 
+            .hierarchy {
+                padding: 0 30px;
+            }
+
             .section-team .single-person .person-image {
                 padding: 0 15px;
             }
@@ -224,11 +263,19 @@
                 font-size: 34px;
                 padding-left: 40px;
             }
+
+            .hierarchy_row {
+                flex-direction: column;
+            }
         }
 
         @media screen and (max-width: 450px) {
             .team_container {
                 padding: 0 20px;
+            }
+
+            .hierarchy {
+                padding: 0 10px;
             }
 
             .section-team .single-person .person-image {
@@ -275,99 +322,109 @@
             </div>
             <!-- / End Header Section -->
 
-            
 
-            <div class="row team_container">
-                <!-- Start Single Person -->
-                <a href="https://sites.google.com/view/deepikakumar/home" target="_blank"
-                    class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="single-person">
-                        <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=1eOUinO6aZ3EMr4fBEP49HvXmWilFcW-E"
-                                alt="">
-                            <span class="icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </span>
+
+            <div class="hierarchy">
+                <div class="hierarchy_row">
+                    <!-- Start Single Person -->
+                    <a href="https://sites.google.com/view/deepikakumar/home" target="_blank"
+                        class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://drive.google.com/uc?export=view&id=1eOUinO6aZ3EMr4fBEP49HvXmWilFcW-E"
+                                    alt="">
+                                <span class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="person-info">
+                                <h3 class="full-name">Dr. Deepika Kumar</h3>
+                                <span class="speciality">Chief Convener</span>
+                            </div>
                         </div>
-                        <div class="person-info">
-                            <h3 class="full-name">Dr. Deepika Kumar</h3>
-                            <span class="speciality">Head of CSE Department & Associate Professor</span>
+                    </a>
+                    <!-- / End Single Person -->
+                </div>
+
+
+                <div class="hierarchy_row">
+                    <!-- Start Single Person -->
+                    <a href="https://sites.google.com/view/dr-jollyparikh/home" target="_blank"
+                        class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://drive.google.com/uc?export=view&id=18iKhHIwiJo3_JyQSMbw8OW26eeAVJK1_"
+                                    alt="">
+                                <span class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="person-info">
+                                <h3 class="full-name">Dr. Jolly<br> Parikh</h3>
+                                <span class="speciality">Convener</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <!-- / End Single Person -->
-                <!-- Start Single Person -->
-                <a href="https://sites.google.com/view/shilpa-gupta/home?authuser=0" target="_blank"
-                    class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="single-person">
-                        <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=1ML7h6PXO3Kr35maJO7B9f7l2V47EaVNA"
-                                alt="">
-                            <span class="icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </span>
+                    </a>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <a href="https://sites.google.com/view/shilpa-gupta/home?authuser=0" target="_blank"
+                        class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://drive.google.com/uc?export=view&id=1ML7h6PXO3Kr35maJO7B9f7l2V47EaVNA"
+                                    alt="">
+                                <span class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="person-info">
+                                <h3 class="full-name">Ms. Shilpa<br> Gupta</h3>
+                                <span class="speciality">Convener</span>
+                            </div>
                         </div>
-                        <div class="person-info">
-                            <h3 class="full-name">Ms. Shilpa <br> Gupta</h3>
-                            <span class="speciality">Assistant Professor, Department of CSE</span>
+                    </a>
+                    <!-- / End Single Person -->
+                </div>
+
+
+                <div class="hierarchy_row">
+                    <!-- Start Single Person -->
+                    <a href="https://bvcoend.ac.in/index.php/ms-akanksha-kochhar/" target="_blank"
+                        class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://drive.google.com/uc?export=view&id=1frJM9njbt4wkdAl26u12CvHSMZ6-IckG"
+                                    alt="">
+                                <span class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="person-info">
+                                <h3 class="full-name">Ms. Akanksha Kochhar</h3>
+                                <span class="speciality">Faculty Cordinator</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <!-- / End Single Person -->
-                <!-- Start Single Person -->
-                <a href="https://sites.google.com/view/dr-jollyparikh/home" target="_blank"
-                    class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="single-person">
-                        <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=18iKhHIwiJo3_JyQSMbw8OW26eeAVJK1_"
-                                alt="">
-                            <span class="icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </span>
+                    </a>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <a href="https://bvcoend.ac.in/index.php/ms-deepika-yadav/" target="_blank"
+                        class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="https://drive.google.com/uc?export=view&id=1UYB5JbDWARJMlXaeFdKpmEsVU-egYbIv"
+                                    alt="">
+                                <span class="icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <div class="person-info">
+                                <h3 class="full-name">Ms. Deepika<br> Yadav</h3>
+                                <span class="speciality">Faculty Cordinator</span>
+                            </div>
                         </div>
-                        <div class="person-info">
-                            <h3 class="full-name">Dr. Jolly<br> Parikh</h3>
-                            <span class="speciality">Associate Professor, Department of CSE</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- / End Single Person -->
-                <!-- Start Single Person -->
-                <a href="https://bvcoend.ac.in/index.php/ms-akanksha-kochhar/" target="_blank"
-                    class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="single-person">
-                        <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=1frJM9njbt4wkdAl26u12CvHSMZ6-IckG"
-                                alt="">
-                            <span class="icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </span>
-                        </div>
-                        <div class="person-info">
-                            <h3 class="full-name">Ms. Akanksha Kochhar</h3>
-                            <span class="speciality">Assistant Professor, Department of CSE</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- / End Single Person -->
-                <!-- Start Single Person -->
-                <a href="https://bvcoend.ac.in/index.php/ms-deepika-yadav/" target="_blank"
-                    class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="single-person">
-                        <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=1UYB5JbDWARJMlXaeFdKpmEsVU-egYbIv"
-                                alt="">
-                            <span class="icon">
-                                <i class="fa-solid fa-graduation-cap"></i>
-                            </span>
-                        </div>
-                        <div class="person-info">
-                            <h3 class="full-name">Ms. Deepika Yadav</h3>
-                            <span class="speciality">Assistant Professor, Department of CSE</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- / End Single Person -->
+                    </a>
+                    <!-- / End Single Person -->
+                </div>
             </div>
 
 
@@ -482,7 +539,8 @@
                 <a href="https://www.linkedin.com/in/akshay-99h" target="_blank" class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
-                            <img src="https://drive.google.com/uc?export=view&id=1-6YpiG-aMiB_5vAiM8tlvfLl-yLv1nM8" alt="">
+                            <img src="https://drive.google.com/uc?export=view&id=1-6YpiG-aMiB_5vAiM8tlvfLl-yLv1nM8"
+                                alt="">
                             <span class="icon">
                                 <i class="fa-solid fa-handshake"></i>
                             </span>
@@ -528,8 +586,8 @@
                     </div>
                 </a>
                 <!-- / End Single Person -->
-                 <!-- Start Single Person -->
-                 <a href="https://www.linkedin.com/in/divya098" target="_blank" class="col-sm-6 col-lg-4 col-xl-3">
+                <!-- Start Single Person -->
+                <a href="https://www.linkedin.com/in/divya098" target="_blank" class="col-sm-6 col-lg-4 col-xl-3">
                     <div class="single-person">
                         <div class="person-image">
                             <img src="https://drive.google.com/uc?export=view&id=1RAAQM2yHM8RZtuq_F9Z1dPXm77AI5Udb"
