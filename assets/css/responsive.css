@@ -289,6 +289,13 @@
     padding: 18px 20px;
   }
 
+
+  /* #timelinePicc {
+    background-image: url(../img/timelinePhone.png);
+    background: url(../img/timelinePhone.png);
+  } */
+
+
   #preloader {
     background: #3A3636 url("../img/preloader2.gif") no-repeat center center;
     background-size: 100%;
