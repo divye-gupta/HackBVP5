@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,27 +7,41 @@
     <title>Document</title>
 
     <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <!-- <link rel="shortcut icon" type="image/jpg" href="assets/img/codecell-logo.png"/> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="shortcut icon" type="image/jpg" href="assets/img/codecell-logo.png"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
 
     <style>
         body {
+            width: 100%;
             font-family: "Poppins", sans-serif;
             /* height: 100vh; */
             background-color: #0d1017;
+            /* display: flex;
+            align-items: center; */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%;
             display: flex;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            margin-right: 0;
+            margin-left: 0;
+            padding: 0 80px;
+            overflow-x: hidden;
         }
 
         .row {
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            /* justify-content: center; */
         }
 
         .header-section .title {
@@ -66,7 +79,7 @@
         .our-team .picture::before {
             content: "";
             width: 100%;
-            height: 0;
+            height: 100%;
             border-radius: 50%;
             background-color: #062637;
             position: absolute;
@@ -79,7 +92,7 @@
         }
 
         .our-team:hover .picture::before {
-            height: 100%;
+            height: 0;
         }
 
         .our-team .picture::after {
@@ -96,20 +109,22 @@
 
         .our-team .picture img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             border-radius: 50%;
-            transform: scale(1);
+            transform: scale(0.9);
             transition: all 0.9s ease 0s;
+            box-shadow: 0 0 0 9px #C3A046;
         }
 
         .our-team:hover .picture img {
-            box-shadow: 0 0 0 14px #C3A046;
-            transform: scale(0.8);
+            transform: scale(1);
         }
 
         .our-team .name {
             color: #062637;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 25px;
             font-family: 'Poppins';
             line-height: 25px;
         }
@@ -119,13 +134,14 @@
             font-weight: bold;
             font-family: 'Poppins';
             line-height: 20px;
+            font-size: 18px;
         }
 
         .our-team .title {
             display: block;
             font-size: 15px;
             color: #4e5052;
-            line-height: 22px;
+            line-height: 20px;
             text-transform: capitalize;
         }
 
@@ -161,6 +177,37 @@
         /* .our-team .social a:hover {
            
         } */
+
+
+        @media screen and (max-width: 1110px) {
+            .container {
+
+                padding: 0 50px;
+
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            .container {
+
+                padding: 0 25px;
+
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            .container {
+
+                padding: 0 55px;
+
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .container {
+                padding: 0 25px;
+            }
+        }
     </style>
 
 </head>
@@ -168,6 +215,153 @@
 <body>
 
     <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="header-section">
+                    <h2 class="title">Let's meet with our Judges</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/adish.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Adish</h3>
+                        <h4 class="title">Manager Information Security</h4>
+                        <h5 class="company">Policybazaar</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/adishjain1995"><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/abhind.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Abhind</h3>
+                        <h4 class="title">Senior Associate</h4>
+                        <h5 class="company">Gojek</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/abhind/"><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/ayush.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Aayush Khurana</h3>
+                        <h4 class="title">Data Scientist</h4>
+                        <h5 class="company">ZS Associates</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/aayush-khurana-8ab7b9169/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/ritvik.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Ritvik Bhatia</h3>
+                        <h4 class="title">SDE 2</h4>
+                        <h5 class="company">Physics Wallah </h5>
+                    </div>
+                    <ul class="social">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/Aishwarya Mittal.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Aishwarya Mittal</h3>
+                        <h4 class="title">Senior Engineer II</h4>
+                        <h5 class="company">American Express</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/aishwaryamittal"><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/sanchita.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Sanchita Bhatia</h3>
+                        <h4 class="title">Asst. Mgr.</h4>
+                        <h5 class="company">EY</h5>
+                    </div>
+                    <ul class="social">
+                        <a href=" https://www.linkedin.com/in/sanchita-bhatia-79402417b"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/akash.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Akash Srivastava</h3>
+                        <h4 class="title">Co-Founder</h4>
+                        <h5 class="company">Kryptoskatt</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/akash16s/"><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/sakshi.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Sakshi Singh</h3>
+                        <h4 class="title">Senior Technical Consultant</h4>
+                        <h5 class="company">Adobe</h5>
+                    </div>
+                    <ul class="social">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="row justify-content-center text-center">
             <div class="col-md-8 col-lg-6">
                 <div class="header-section">
@@ -180,7 +374,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
                 <div class="our-team card_container">
                     <div class="picture">
-                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                        <img class="img-fluid" src="./assets/img/mentors/devan.jpeg">
                     </div>
                     <div class="team-content">
                         <h3 class="name">Devan Bhalla</h3>
@@ -188,7 +382,7 @@
                         <h5 class="company">Moglix</h5>
                     </div>
                     <ul class="social">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/devanbhalla/"><i class="fa-brands fa-linkedin"></i></a>
                     </ul>
                 </div>
             </div>
@@ -213,7 +407,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
                 <div class="our-team card_container">
                     <div class="picture">
-                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                        <img class="img-fluid" src="./assets/img/mentors/bhavyabansal.jpeg">
                     </div>
                     <div class="team-content">
                         <h3 class="name">Bhavya Bansal</h3>
@@ -221,22 +415,12 @@
                         <h5 class="company">Easyres</h5>
                     </div>
                     <ul class="social">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ibhavyabansal/"><i class="fa-brands fa-linkedin"></i></a>
                     </ul>
                 </div>
             </div>
-        </div>
 
 
-
-        <div class="row justify-content-center text-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="header-section">
-                    <h2 class="title">Let's meet with our Judges</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
                 <div class="our-team card_container">
                     <div class="picture">
@@ -257,7 +441,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
                 <div class="our-team card_container">
                     <div class="picture">
-                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                        <img class="img-fluid" src="./assets/img/mentors/shreyansmittal.jpeg">
                     </div>
                     <div class="team-content">
                         <h3 class="name">Shreyans Mittal</h3>
@@ -265,7 +449,24 @@
                         <h5 class="company">CLOUDSUFI</h5>
                     </div>
                     <ul class="social">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/shreyans-mittal-644525194"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 card_container">
+                <div class="our-team card_container">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/img/mentors/hardikmanocha.jpeg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Hardik Manocha</h3>
+                        <h4 class="title">Director, Co-founder</h4>
+                        <h5 class="company">FourCore</h5>
+                    </div>
+                    <ul class="social">
+                        <a href="https://www.linkedin.com/in/hardik8284/"><i class="fa-brands fa-linkedin"></i></a>
                     </ul>
                 </div>
             </div>
